@@ -1,0 +1,23 @@
+{
+  "name": "pi-commerce-onboarding-workspace",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pi Commerce Onboarding Workspace with Meta WhatsApp Business Cloud API Integration",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node server/index.js",
+    "build:client": "cd client && npm run build",
+    "start": "node server/index.js",
+    "test": "node server/test-whatsapp.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "twilio": "^6.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
